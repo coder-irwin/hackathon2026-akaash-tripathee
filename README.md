@@ -134,11 +134,13 @@ docker compose down
 
 *(Hackathon Judges: The repository is fully pre-configured to run out of the box. Launch `dashboard.py` and click "Trigger Next Run" to watch the engine ingest tickets, block unsafe tasks, and resolve issues in real-time.)*
 
-**Screenshots:**
-*(Placeholders for GitHub: Please check the `COST_ANALYSIS.md` for our projection graphs)*
-- `[Screenshot 1 - The Web Dashboard]`
-- `[Screenshot 2 - The Terminal Data Table]`
-- `[Screenshot 3 - The Audit Log Viewer Modal]`
+**System In Action:**
+*Visuals of the live event loop, processing speeds, and forensic trace outputs:*
+
+![Idle Dashboard Engine](images/dashboard_start.png)
+![High Concurrency Processing](images/dashboard_processing.png)
+![Zero DLQ Results with Metrics](images/dashboard_results.png)
+![Decisions & Trace Audit Modal](images/dashboard_audit.png)
 
 ---
 
