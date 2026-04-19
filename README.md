@@ -75,7 +75,7 @@ shopwave/
 Ensure Python 3.11+ is installed.
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/coder-irwin/hackathon2026-akaash-tripathee
 cd shopwave
 pip install -r requirements.txt
 cp .env.example .env
