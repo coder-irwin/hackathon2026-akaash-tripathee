@@ -71,29 +71,65 @@ shopwave/
 
 ## How To Run
 
-### Local Setup
-Ensure Python 3.11+ is installed.
+### Option 1: Local Environment Setup
 
+**Step 1: Clone the Repository**
 ```bash
 git clone https://github.com/coder-irwin/hackathon2026-akaash-tripathee
-cd shopwave
+cd hackathon2026-akaash-tripathee
+```
+
+**Step 2: Install Dependencies**
+Ensure you have Python 3.11+ installed.
+```bash
 pip install -r requirements.txt
+```
+
+**Step 3: Configure Environment Variables**
+Generate your local `.env` configuration file:
+```bash
 cp .env.example .env
+```
+*Important: Open the `.env` file in your editor and add your exact OpenAI API key to the `OPENAI_API_KEY=` variable.*
 
-# Run terminal backend engine
+**Step 4: Launch the Engine**
+You can launch the underlying CLI agent or the full visual dashboard.
+
+*To launch the CLI Agent:*
+```bash
 python main.py
+```
 
-# Or launch Web Dashboard:
+*To launch the Web Dashboard:*
+```bash
 python dashboard.py
 ```
-Navigate to `http://localhost:5000`
+Navigate to `http://localhost:5000` in your browser.
 
-### Docker Setup
+---
+
+### Option 2: Docker Setup (Containerized)
+
+If you have Docker Desktop installed, you can skip local Python dependencies entirely.
+
+**Step 1: Clone the Repository**
 ```bash
-# Build and run using Compose
+git clone https://github.com/coder-irwin/hackathon2026-akaash-tripathee
+cd hackathon2026-akaash-tripathee
+```
+
+**Step 2: Configure Environment Variables**
+Generate the environment file:
+```bash
+cp .env.example .env
+```
+*Important: Open the `.env` file and insert your OpenAI API key.*
+
+**Step 3: Build and Run via Compose**
+```bash
 docker compose up --build
 ```
-Navigate to `http://localhost:5000`
+Navigate to `http://localhost:5000` in your browser to interact with the dashboard.
 
 ---
 
