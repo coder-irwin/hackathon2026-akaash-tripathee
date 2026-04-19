@@ -1,0 +1,1 @@
+# ShopWave Resolution Agent

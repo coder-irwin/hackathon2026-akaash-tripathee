@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+scratch/
+outbound_queue.json
+.idea/
+.vscode/
+*.egg-info/
+dist/
+build/

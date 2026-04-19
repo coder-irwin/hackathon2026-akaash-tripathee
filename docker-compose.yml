@@ -1,0 +1,16 @@
+services:
+  shopwave:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: shopwave_engine
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
+    volumes:
+      # Persist configuration and logs
+      - ./data:/app/data
+      - ./audit_log.json:/app/audit_log.json
+      - ./outbound_queue.json:/app/outbound_queue.json
+    restart: unless-stopped
